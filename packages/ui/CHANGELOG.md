@@ -1,3 +1,13 @@
+## 0.3.0 (2025-03-13)
+
+### 🚀 Features
+
+- **button:** add hover styles ([515388a](https://github.com/fonsecaj/butternut/commit/515388a))
+
+### ❤️ Thank You
+
+- Jordan Fonseca
+
 ## 0.2.0 (2025-03-13)
 
 ### 🚀 Features
