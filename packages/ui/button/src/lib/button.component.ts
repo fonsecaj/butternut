@@ -23,9 +23,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition-property: border-color, background, color, transform, box-shadow;
+        transition-property: background;
         transition-duration: .15s;
-        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+      }
+
+      .butter-button:hover {
+        background: var(--butternut-gray-900);
       }
     `,
   ],
