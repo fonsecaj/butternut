@@ -24,6 +24,10 @@ jobs:
         with:
           fetch-depth: 0
       
+      - run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+      
       - uses: pnpm/action-setup@v4
         with:
           version: 9
@@ -46,6 +50,12 @@ jobs:
       - uses: nrwl/nx-set-shas@v4
 
       - run: pnpm exec nx affected -t lint test build
+
+      - run: pnpm run release
+        if: ${{ github.ref == 'refs/heads/main' }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - run: pnpm exec nx run @sekoya/storybook:build
         if: ${{ github.ref == 'refs/heads/main' }}
