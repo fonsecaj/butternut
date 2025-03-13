@@ -13,7 +13,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
       .sek-button {
         appearance: none;
         height: 28px;
-        border-radius: 6px;
+        border-radius: 8px;
         color: var(--sekoya-gray-100);
         background: var(--sekoya-gray-1000);
         border: none;
