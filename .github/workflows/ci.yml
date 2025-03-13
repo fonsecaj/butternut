@@ -13,6 +13,8 @@ concurrency:
 permissions:
   actions: write
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   main:
@@ -54,6 +56,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
+          name: storybook
           path: 'dist/apps/storybook'
 
       - uses: actions/cache/save@v4
@@ -63,6 +66,7 @@ jobs:
           key: ${{ steps.nx-cache-restore.outputs.cache-primary-key }}
   
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
     environment:
       name: storybook
       url: ${{ steps.deployment.outputs.page_url }}
@@ -71,3 +75,5 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+        with:
+          artifact_name: storybook
