@@ -18,7 +18,8 @@
         "styles": ["{projectRoot}/src/preview.css"],
         "browserTarget": "@sekoya/storybook:build",
         "compodoc": false
-      }
+      },
+      "inputs": ["{workspaceRoot}/CHANGELOG.md"]
     },
     "start": {
       "executor": "@storybook/angular:start-storybook",
