@@ -58,7 +58,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - run: pnpm exec nx run @sekoya/storybook:build
+      - run: pnpm exec nx run @butternut/storybook:build
         if: ${{ github.ref == 'refs/heads/main' }}
 
       - uses: actions/configure-pages@v5

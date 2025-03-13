@@ -1,5 +1,5 @@
 {
-  "name": "@sekoya/tokens",
+  "name": "@butternut/tokens",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/tokens/src",
   "projectType": "library",

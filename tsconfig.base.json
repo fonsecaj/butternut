@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sekoya/storybook": ["apps/storybook/src/index.ts"],
-      "@sekoya/tokens": ["packages/tokens/src/index.ts"],
-      "@sekoya/ui": ["packages/ui/src/index.ts"],
-      "@sekoya/ui/button": ["packages/ui/button/src/index.ts"]
+      "@butternut/storybook": ["apps/storybook/src/index.ts"],
+      "@butternut/tokens": ["packages/tokens/src/index.ts"],
+      "@butternut/ui": ["packages/ui/src/index.ts"],
+      "@butternut/ui/button": ["packages/ui/button/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

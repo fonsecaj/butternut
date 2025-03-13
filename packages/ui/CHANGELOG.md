@@ -2,7 +2,7 @@
 
 ### 🚀 Features
 
-- **button:** change radius ([d590f6e](https://github.com/fonsecaj/sekoya/commit/d590f6e))
+- **button:** change radius ([d590f6e](https://github.com/fonsecaj/butternut/commit/d590f6e))
 
 ### ❤️ Thank You
 
@@ -12,12 +12,12 @@
 
 ### 🚀 Features
 
-- create storybook and glue everything up ([2f21d96](https://github.com/fonsecaj/sekoya/commit/2f21d96))
-- create ui package ([0932f2b](https://github.com/fonsecaj/sekoya/commit/0932f2b))
+- create storybook and glue everything up ([2f21d96](https://github.com/fonsecaj/butternut/commit/2f21d96))
+- create ui package ([0932f2b](https://github.com/fonsecaj/butternut/commit/0932f2b))
 
 ### 🏡 Chore
 
-- fix lint issues ([cfadeab](https://github.com/fonsecaj/sekoya/commit/cfadeab))
+- fix lint issues ([cfadeab](https://github.com/fonsecaj/butternut/commit/cfadeab))
 
 ### ❤️ Thank You
 

@@ -1,5 +1,5 @@
 export default {
-  displayName: '@sekoya/ui',
+  displayName: '@butternut/ui',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../coverage/packages/ui',

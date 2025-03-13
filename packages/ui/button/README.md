@@ -1,3 +1,3 @@
-# @sekoya/ui/button
+# @butternut/ui/button
 
-Secondary entry point of `@sekoya/ui`. It can be used by importing from `@sekoya/ui/button`.
+Secondary entry point of `@butternut/ui`. It can be used by importing from `@butternut/ui/button`.

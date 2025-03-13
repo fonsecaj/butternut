@@ -18,7 +18,7 @@ import { releaseVersion, releaseChangelog, releasePublish } from 'nx/release';
   const publishResult = await releasePublish({
     registry: 'https://registry.npmjs.org/',
     access: 'public',
-  })
+  });
 
   process.exit(
     Object.values(publishResult).every((result) => result.code === 0) ? 0 : 1

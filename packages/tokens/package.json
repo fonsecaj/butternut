@@ -1,5 +1,5 @@
 {
-  "name": "@sekoya/tokens",
+  "name": "@butternut/tokens",
   "version": "0.0.1",
   "type": "commonjs",
   "main": "./index.cjs",

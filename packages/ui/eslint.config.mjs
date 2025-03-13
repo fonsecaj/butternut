@@ -25,13 +25,13 @@ export default [
       '@angular-eslint/directive-selector': [
         'error',
         {
-          prefix: 'sek',
+          prefix: 'butter',
         },
       ],
       '@angular-eslint/component-selector': [
         'error',
         {
-          prefix: 'sek',
+          prefix: 'butter',
         },
       ],
     },

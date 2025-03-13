@@ -6,7 +6,7 @@ addons.setConfig({
     base: 'dark',
   
     // Brand
-    brandTitle: `<span>@sekoya/ui${process.env.VERSION}</span>`,
+    brandTitle: `<span>@butternut/ui${process.env.VERSION}</span>`,
     brandUrl: '/',
     brandTarget: '_self',
   }),

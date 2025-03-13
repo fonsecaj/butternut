@@ -1,5 +1,5 @@
 {
-  "name": "@sekoya/storybook",
+  "name": "@butternut/storybook",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/storybook/src",
   "prefix": "sb",
@@ -16,7 +16,7 @@
         "outputDir": "dist/apps/storybook",
         "configDir": "{projectRoot}/src",
         "styles": ["{projectRoot}/src/preview.css"],
-        "browserTarget": "@sekoya/storybook:build",
+        "browserTarget": "@butternut/storybook:build",
         "compodoc": false
       },
       "inputs": ["{workspaceRoot}/CHANGELOG.md"]
@@ -26,10 +26,10 @@
       "options": {
         "port": 6007,
         "configDir": "{projectRoot}/src",
-        "browserTarget": "@sekoya/storybook:build",
+        "browserTarget": "@butternut/storybook:build",
         "compodoc": false
       }
     }
   },
-  "implicitDependencies": ["@sekoya/ui"]
+  "implicitDependencies": ["@butternut/ui"]
 }

@@ -1,8 +1,8 @@
 {
-  "name": "@sekoya/ui",
+  "name": "@butternut/ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/ui/src",
-  "prefix": "sek",
+  "prefix": "butter",
   "projectType": "library",
   "release": {
     "version": {

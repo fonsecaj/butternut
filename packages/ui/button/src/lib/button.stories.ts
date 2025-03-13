@@ -11,6 +11,6 @@ type Story = StoryObj<ButtonComponent>;
 
 export const Default: Story = {
   render: () => ({
-    template: `<button sek-button>Upload</button>`,
+    template: `<button butter-button>Upload</button>`,
   })
 }

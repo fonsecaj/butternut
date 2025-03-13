@@ -1,21 +1,21 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'button[sek-button]',
+  selector: 'button[butter-button]',
   template: `
     <ng-content/>
   `,
   host: {
-    class: 'sek-button',
+    class: 'butter-button',
   },
   styles: [
     `
-      .sek-button {
+      .butter-button {
         appearance: none;
         height: 28px;
         border-radius: 8px;
-        color: var(--sekoya-gray-100);
-        background: var(--sekoya-gray-1000);
+        color: var(--butternut-gray-100);
+        background: var(--butternut-gray-1000);
         border: none;
         font-weight: 500;
         padding: 0 8px;
