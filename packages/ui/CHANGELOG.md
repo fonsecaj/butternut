@@ -1,3 +1,13 @@
+## 0.2.0 (2025-03-13)
+
+### 🚀 Features
+
+- **button:** change radius ([d590f6e](https://github.com/fonsecaj/sekoya/commit/d590f6e))
+
+### ❤️ Thank You
+
+- Jordan Fonseca
+
 ## 0.1.0 (2025-03-13)
 
 ### 🚀 Features
