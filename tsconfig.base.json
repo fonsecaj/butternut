@@ -17,7 +17,8 @@
     "paths": {
       "@sekoya/storybook": ["apps/storybook/src/index.ts"],
       "@sekoya/tokens": ["packages/tokens/src/index.ts"],
-      "@sekoya/ui": ["packages/ui/src/index.ts"]
+      "@sekoya/ui": ["packages/ui/src/index.ts"],
+      "@sekoya/ui/button": ["packages/ui/button/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

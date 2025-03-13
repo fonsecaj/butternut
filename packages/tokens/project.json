@@ -21,9 +21,15 @@
         "outputPath": "dist/packages/tokens",
         "main": "packages/tokens/src/index.ts",
         "tsConfig": "packages/tokens/tsconfig.lib.json",
-        "assets": ["packages/tokens/*.md"],
-        "format": ["cjs"],
-        "generatePackageJson": true
+        "assets": [
+          "packages/tokens/*.md",
+          {
+            "glob": "**/*.css",
+            "input": "packages/tokens/src/lib",
+            "output": "."
+          }
+        ],
+        "format": ["cjs"]
       }
     },
     "nx-release-publish": {

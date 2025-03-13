@@ -8,6 +8,27 @@
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"
+    },
+    "build": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/apps/storybook",
+        "configDir": "{projectRoot}/src",
+        "styles": ["{projectRoot}/src/preview.css"],
+        "browserTarget": "@sekoya/storybook:build",
+        "compodoc": false
+      }
+    },
+    "start": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 6007,
+        "configDir": "{projectRoot}/src",
+        "browserTarget": "@sekoya/storybook:build",
+        "compodoc": false
+      }
     }
-  }
+  },
+  "implicitDependencies": ["@sekoya/ui"]
 }

@@ -2,7 +2,7 @@
   "name": "@sekoya/ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/ui/src",
-  "prefix": "lib",
+  "prefix": "sek",
   "projectType": "library",
   "release": {
     "version": {

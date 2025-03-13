@@ -4,5 +4,16 @@
   "type": "commonjs",
   "main": "./index.cjs",
   "types": "./index.d.ts",
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "**/*",
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    },
+    "./main.css": "./main.css"
+  }
 }
