@@ -45,7 +45,7 @@ jobs:
 
       - run: pnpm exec nx affected -t lint test build
 
-      - run: pnpm exec nx @sekoya/storybook:build
+      - run: pnpm exec nx run @sekoya/storybook:build
         if: ${{ github.ref == 'refs/heads/main' }}
 
       - uses: actions/configure-pages@v5
