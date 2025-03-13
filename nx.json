@@ -59,10 +59,13 @@
       }
     },
     "changelog": {
-      "projectChangelogs": {
+      "workspaceChangelog": {
         "createRelease": "github"
       },
-      "workspaceChangelog": true
+      "projectChangelogs": true,
+      "git": {
+        "commitMessage": "chore(release): {version} [skip ci]"
+      }
     },
     "conventionalCommits": {
       "types": {
@@ -71,9 +74,6 @@
         },
         "feat": {
           "semverBump": "minor"
-        },
-        "chore": {
-          "semverBump": "patch"
         },
         "docs": {
           "semverBump": "patch"
@@ -90,7 +90,8 @@
         "ci": false,
         "revert": false,
         "style": false,
-        "test": false
+        "test": false,
+        "chore": false
       }
     }
   },

@@ -2,7 +2,9 @@
   "name": "@sekoya/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "release": "tsx tools/release/version.ts"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~19.2.0",
@@ -18,6 +20,7 @@
     "@nx/eslint-plugin": "20.5.0",
     "@nx/jest": "20.5.0",
     "@nx/js": "20.5.0",
+    "@nx/plugin": "20.5.0",
     "@nx/storybook": "20.5.0",
     "@nx/web": "20.5.0",
     "@schematics/angular": "~19.2.0",
@@ -54,6 +57,7 @@
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
+    "tsx": "^4.19.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.19.0",
     "verdaccio": "^6.0.5"

@@ -6,9 +6,13 @@ on:
       - main
   pull_request:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 permissions:
-  actions: read
-  contents: read
+  actions: write
+  contents: write
 
 jobs:
   main:
@@ -27,8 +31,43 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      - uses: actions/cache/restore@v4
+        id: nx-cache-restore
+        with:
+          path: .nx/cache
+          key: ${{ runner.os }}-nx-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-nx-
+
       - run: pnpm install --frozen-lockfile
 
       - uses: nrwl/nx-set-shas@v4
 
       - run: pnpm exec nx affected -t lint test build
+
+      - run: pnpm exec nx @sekoya/storybook:build
+        if: ${{ github.ref == 'refs/heads/main' }}
+
+      - uses: actions/configure-pages@v5
+        if: ${{ github.ref == 'refs/heads/main' }}
+
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          path: 'dist/apps/storybook'
+
+      - uses: actions/cache/save@v4
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          path: .nx/cache
+          key: ${{ steps.nx-cache-restore.outputs.cache-primary-key }}
+  
+  deploy:
+    environment:
+      name: storybook
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: main
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
