@@ -25,17 +25,13 @@ export default [
       '@angular-eslint/directive-selector': [
         'error',
         {
-          type: 'attribute',
-          prefix: 'lib',
-          style: 'camelCase',
+          prefix: 'sek',
         },
       ],
       '@angular-eslint/component-selector': [
         'error',
         {
-          type: 'element',
-          prefix: 'lib',
-          style: 'kebab-case',
+          prefix: 'sek',
         },
       ],
     },
