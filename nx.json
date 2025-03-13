@@ -51,7 +51,47 @@
   },
   "release": {
     "version": {
-      "preVersionCommand": "pnpm dlx nx run-many -t build"
+      "preVersionCommand": "pnpm dlx nx run-many -t build",
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "packageRoot": "dist/{projectName}",
+        "skipLockFileUpdate": true
+      }
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "createRelease": "github"
+      },
+      "workspaceChangelog": true
+    },
+    "conventionalCommits": {
+      "types": {
+        "build": {
+          "semverBump": "minor"
+        },
+        "feat": {
+          "semverBump": "minor"
+        },
+        "chore": {
+          "semverBump": "patch"
+        },
+        "docs": {
+          "semverBump": "patch"
+        },
+        "fix": {
+          "semverBump": "patch"
+        },
+        "perf": {
+          "semverBump": "patch"
+        },
+        "refactor": {
+          "semverBump": "patch"
+        },
+        "ci": false,
+        "revert": false,
+        "style": false,
+        "test": false
+      }
     }
   },
   "generators": {
